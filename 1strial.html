@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KLETECH University</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    padding-top: 70px;
+}
+footer {
+    background: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+/* Hover & active color */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #ffc107 !important; /* Bootstrap yellow */
+}
+.courses-section {
+  background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+  padding: 70px 30px;
+  border-radius: 25px;
+  margin: 50px auto;
+}
+
+/* TITLE */
+.courses-section h3 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 45px;
+  color: #1a237e;
+}
+
+/* COURSE CARD */
+.course-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.course-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 22px 40px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+.course-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+/* COURSE NAME */
+.course-card h5 {
+  font-weight: 600;
+  color: #263238;
+  margin-bottom: 10px;
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER / NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+  <div class="container">
+    <!-- LOGO -->
+    <a class="navbar-brand" href="#">
+      <img 
+        src="https://www.kletech.ac.in/images/logo.png" 
+        alt="KLE Tech University Logo"
+        height="50"
+        class="d-inline-block align-text-middle"
+      >
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+     <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#campusCarousel">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#depart">Departments</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.kletech.ac.in/enquiry">Admissions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+  </ul>
+</div>
+  </div>
+</nav>
+
+
+
+<!-- ================= CAROUSEL ================= -->
+<div class="container">
+<div id="campusCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkkbE3TukhNDp6xapmgzyK4__7IDmXNYyPxg&s" class="d-block w-100" height="400">
+    </div>
+    <div class="carousel-item">
+      <img src="https://content.jdmagicbox.com/comp/hubli/x4/0836px836.x836.120225163346.e2x4/catalogue/kle-institute-of-technology-gokul-road-hubli-engineering-institutes-24fbuyk.jpg" class="d-block w-100" height="400">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.kletech.ac.in/belagavi/images/nlibrary-img1.jpg" class="d-block w-100" height="400">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#campusCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#campusCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</div>
+
+
+<!-- ================= SECTIONS ================= -->
+<div class="container mt-5">
+
+  <section class="courses-section">
+  <div class="container">
+
+    <h3>Courses Offered</h3>
+
+    <div class="row g-4" id="depart">
+
+      <!-- B.Tech CSE -->
+      <div class="col-md-3 col-sm-6">
+        <div class="course-card">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="CSE">
+          <h5>BCA</h5>
+       
+        </div>
+      </div>
+
+      <!-- Mechanical -->
+      <div class="col-md-3 col-sm-6">
+        <div class="course-card">
+          <img src="commerce.jpg" alt="commerce">
+          <h5>B.com</h5>
+          
+        </div>
+      </div>
+
+      <!-- MBA -->
+      <div class="col-md-3 col-sm-6">
+        <div class="course-card">
+          <img src="http://images.unsplash.com/photo-1556761175-4b46a572b786" alt="MBA">
+          <h5>MBA</h5>
+          
+        </div>
+      </div>
+
+      <!-- MCA -->
+      <div class="col-md-3 col-sm-6">
+        <div class="course-card">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="MCA">
+          <h5>MCA</h5>
+     
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ================= ALERT ================= -->
+<div class="container mt-4">
+  <div class="alert alert-warning text-center fw-bold">
+    Admissions Open 2025
+  </div>
+</div>
+
+<div>
+    <div class="col-md-6">
+      <h3>Announcements</h3>
+      <div style="display: flex;gap: 10px;  white-space: nowrap; ">
+      <p>📢 Semester exams start from NOVEMBER 2025.</p>
+      <p>📢 Scholarship applications open.</p>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- ================= ACCORDION (FAQ) ================= -->
+<div class="container mt-5">
+<h3>FAQ – Admissions</h3>
+<div class="accordion" id="faq">
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">
+        What is the admission process?
+      </button>
+    </h2>
+    <div id="q1" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        Admissions are based on entrance exam and counseling.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">
+        Is hostel facility available?
+      </button>
+    </h2>
+    <div id="q2" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        Yes, separate hostels are available for boys and girls.
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ================= PAGINATION ================= -->
+<div class="container mt-4">
+<nav>
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link" href="#campusCarousel">1</a></li>
+    <li class="page-item"><a class="page-link" href="https://www.kletech.ac.in/enquiry">2</a></li>
+    <li class="page-item"><a class="page-link" href="https://www.kletech.ac.in/enquiry">3</a></li>
+  </ul>
+</nav>
+</div>
+
+<!-- ================= TOAST ================= -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div class="toast show">
+    <div class="toast-header">
+      <strong class="me-auto">Notice</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      You are viewing the updated notice
+    </div>
+  </div>
+</div>
+
+<!-- ================= FOOTERhey i have html page and i want to shatre the output to my friend what are the thinfs i can do without send the code the output should be viewed like throug online link ================= -->
+<footer class="mt-5">
+  <div class="container text-center"  id="contact">
+    <p>KLE Technological University, Hubballi</p>
+    <p>
+      <a href="https://www.facebook.com/kletechbvb/?locale=en_GB" class="text-white me-2">Facebook</a>
+      <a href="https://x.com/KLETechbvb" class="text-white me-2">Twitter</a>
+      <a href="https://www.instagram.com/kleit_official/?hl=en" class="text-white">Instagram</a>
+    </p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
